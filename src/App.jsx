@@ -31,7 +31,7 @@ function App() {
       <input type='text' value={name} onChange={(e) => setName(e.target.value)}/>
       <button onClick={handlePlayerBtn}>Add</button>
 
-      <h1>All players</h1>
+      <h1>All players list </h1>
       <p>{msg}</p>
       {players.length > 0 ? (
         players.map((player,idx)=>{
@@ -44,11 +44,11 @@ function App() {
           )
         })  
       ) : (
-        <p>No players added</p>
+        <p>No players added in the list</p>
       )
       }
 
-      <h1>Final Team</h1>
+      <h1>Final Team list </h1>
       <p>{teammsg}</p>
       {team.length > 0 ? (
         team.map((player,idx)=>{
